@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-security-demo-1
+  datasource:
+    password: 1234
+    url: jdbc:mysql://localhost:3306/web-shop
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+  sendgrid:
+    api-key: your_sendgrid_api_key_here
+server:
+  port: 8081
